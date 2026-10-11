@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dar El Grill - Cuisine généreuse, grillades et saveurs authentiques.">
+  <title>Dar El Grill | Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#accueil">DAR <span>EL GRILL</span></a>
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="nav-links">
+      <a href="#accueil">Accueil</a>
+      <a href="#menu">Notre menu</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-content">
+        <p class="eyebrow">LE GOÛT DE L'AUTHENTIQUE</p>
+        <h1>Une cuisine généreuse.<br><span>Un goût inoubliable.</span></h1>
+        <p>Découvrez nos grillades, nos spécialités maison
+          et le plaisir de partager un bon repas.</p>
+        <a href="#menu" class="btn">Découvrir le menu ↗</a>
+      </div>
+      <div class="hero-note">FRAIS · GÉNÉREUX · SAVOUREUX</div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading">
+        <p class="eyebrow">NOS SPÉCIALITÉS</p>
+        <h2>Le menu <span>de la maison</span></h2>
+        <p>Des recettes savoureuses préparées avec soin.</p>
+      </div>
+
+      <div class="filters" aria-label="Filtrer les plats">
+        <button class="filter active" data-category="all">Tout</button>
+        <button class="filter" data-category="grillades">Grillades</button>
+        <button class="filter" data-category="plats">Plats</button>
+        <button class="filter" data-category="sandwichs">Sandwichs</button>
+      </div>
+
+      <div class="menu-grid">
+        <article class="dish-card" data-category="grillades">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=85" alt="Assiette de grillades" loading="lazy">
+          <div class="dish-info">
+            <div><h3>Mix Grill</h3><p>Assortiment de grillades et légumes.</p></div>
+            <strong>85 DH</strong>
+          </div>
+        </article>
+
+        <article class="dish-card" data-category="plats">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=85" alt="Plat maison avec légumes" loading="lazy">
+          <div class="dish-info">
+            <div><h3>Plat du Chef</h3><p>Une recette maison pleine de saveurs.</p></div>
+            <strong>65 DH</strong>
+          </div>
+        </article>
+
+        <article class="dish-card" data-category="sandwichs">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=85" alt="Burger gourmand" loading="lazy">
+          <div class="dish-info">
+            <div><h3>Classic Burger</h3><p>Bœuf, salade, tomate et sauce maison.</p></div>
+            <strong>45 DH</strong>
+          </div>
+        </article>
+
+        <article class="dish-card" data-category="grillades">
+          <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=800&q=85" alt="Viande grillée" loading="lazy">
+          <div class="dish-info">
+            <div><h3>Steak Grill</h3><p>Viande grillée et accompagnement.</p></div>
+            <strong>75 DH</strong>
+          </div>
+        </article>
+
+        <article class="dish-card" data-category="plats">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=85" alt="Salade fraîche" loading="lazy">
+          <div class="dish-info">
+            <div><h3>Salade Fraîche</h3><p>Légumes frais et vinaigrette maison.</p></div>
+            <strong>35 DH</strong>
+          </div>
+        </article>
+
+        <article class="dish-card" data-category="sandwichs">
+          <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=800&q=85" alt="Sandwich garni" loading="lazy">
+          <div class="dish-info">
+            <div><h3>Sandwich Maison</h3><p>Garniture généreuse, pain croustillant.</p></div>
+            <strong>40 DH</strong>
+          </div>
+        </article>
+      </div>
+      <p class="menu-disclaimer">Menu de démonstration — les plats et les prix sont à personnaliser.</p>
+    </section>
+
+    <section class="about" id="apropos">
+      <div>
+        <p class="eyebrow">NOTRE PHILOSOPHIE</p>
+        <h2>Le plaisir de bien manger, <span>tout simplement.</span></h2>
+      </div>
+      <p>Chez Dar El Grill, nous célébrons les bons produits,
+        les recettes généreuses et les moments partagés autour
+        d'une table. Bienvenue chez vous.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="eyebrow">ON VOUS ATTEND</p>
+      <h2>Votre prochaine bonne adresse.</h2>
+      <p>Remplacez ces informations par les coordonnées du restaurant.</p>
+      <p class="contact-detail">📍 Votre adresse, Maroc</p>
+      <p class="contact-detail">☎ Votre numéro de téléphone</p>
+      <a class="btn" href="mailto:contact@example.com">Nous contacter ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#accueil">DAR <span>EL GRILL</span></a>
+    <p>© <span id="year"></span> Dar El Grill. Site de démonstration.</p>
+  </footer>
+</body>
+</html>
